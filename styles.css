@@ -1,0 +1,110 @@
+/* GOOGLE FONT */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    background: #f5f5f5;
+    color: #333;
+}
+
+/* HEADER */
+header {
+    background: #4574b5;
+    color: #fff;
+    padding: 20px 0;
+}
+header .header-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1020px;
+    margin: auto;
+    flex-wrap: wrap;
+}
+.logo-container {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+#logo { border-radius: 50%; }
+
+/* NAVIGATION */
+#mainnav ul {
+    display: flex;
+    gap: 20px;
+}
+#mainnav ul li a {
+    color: #fff;
+    font-weight: 600;
+    padding: 8px 12px;
+    border-left: 2px solid #fff;
+    transition: 0.3s;
+}
+#mainnav ul li:first-child a { border-left: none; }
+#mainnav ul li a:hover { background: #fff; color: #4574b5; border-radius: 5px; }
+
+/* SECTIONS */
+section {
+    padding: 50px 20px;
+}
+h2 { text-align: center; margin-bottom: 40px; font-size: 2rem; color: #4574b5; }
+
+/* FEATURED & PROJECTS */
+.featured, .projects {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.featured article { flex: 1 1 100%; }
+.projects article {
+    flex: 1 1 calc(50% - 20px);
+    background: #fff;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    transition: 0.3s;
+}
+.projects article:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+}
+.projects img, .featured img { border-radius: 10px; margin-bottom: 10px; }
+
+/* ABOUT & CONTACT */
+#about-contact .wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    align-items: flex-start;
+}
+#about-contact .profile-photo img {
+    border-radius: 50%;
+    width: 260px;
+}
+#about-contact article {
+    background: #fff;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+    flex: 2 1 400px;
+}
+
+/* SOCIAL LINKS */
+.social a { color: #4574b5; margin-right: 10px; font-size: 1.5rem; transition: 0.3s; }
+.social a:hover { color: #ff6b6b; }
+
+/* FOOTER */
+footer {
+    background: #4574b5;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+/* RESPONSIVE */
+@media (min-width: 768px) {
+    .projects article { flex: 1 1 calc(33% - 20px); }
+}
+
+@media (min-width: 1040px) {
+    header .header-wrapper, .wrapper { max-width: 1020px; margin: auto; }
+}
